@@ -5,9 +5,13 @@ from streamlit_gsheets import GSheetsConnection
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 df = conn.read(
-    worksheet="tips", # nama worksheet yang ingin diambil
-    ttl="10m" # waktu cache
+    spreadsheet = st.secrets.data_tips["spreadsheet2"],
+    worksheet="773835363", # nama worksheet yang ingin diambil
+    ttl=0,
+    usecols=[0, 1],
+    nrows=3,
 )
 
+
 # Print results.
-st.write(df)
+st.dataframe(df.head())
