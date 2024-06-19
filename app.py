@@ -1,17 +1,38 @@
 import streamlit as st
 from streamlit_gsheets import GSheetsConnection
 
-# Create a connection object.
-conn = st.connection("gsheets", type=GSheetsConnection)
+import pandas as pd 
+from ydata_profiling import ProfileReport
+from streamlit_pandas_profiling import st_profile_report
+import time
 
-df = conn.read(
-    spreadsheet = st.secrets.data_tips["spreadsheet2"],
-    worksheet="773835363", # nama worksheet yang ingin diambil
-    ttl=0,
-    usecols=[0, 1],
-    nrows=3,
-)
+st.set_page_config(page_title='Data Profiler',layout='wide', page_icon='📝')
 
 
-# Print results.
-st.dataframe(df.head())
+st.title("📝 Data Profiler")
+
+with st.sidebar:
+    st.subheader("Spreadsheet Data")
+    st.markdown("---")
+
+
+if st.sidebar.button("Start Profiling Data"):
+    # Create a connection object.
+    conn = st.connection("gsheets", type=GSheetsConnection)
+
+    df = conn.read(
+        spreadsheet = st.secrets.data_tips["spreadsheet2"],
+        worksheet="773835363", # nama worksheet yang ingin diambil
+        ttl=0
+    )
+
+
+    # Print results.
+    with st.spinner('Generating Report ⏳⌛⏳⌛⏳⌛'):
+        pr = ProfileReport(df)
+        time.sleep(3)
+
+    st_profile_report(pr)
+    
+else:
+    st.sidebar.write("👆👆 Click to see magic 🪄")
