@@ -5,3 +5,4 @@ matplotlib
 streamlit==1.28
 ydata_profiling
 streamlit-pandas-profiling
+wheel==0.38.4
