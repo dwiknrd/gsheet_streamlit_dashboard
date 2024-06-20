@@ -3,4 +3,3 @@ streamlit-pandas-profiling
 pandas
 st-gsheets-connection
 ydata_profiling
-pandas_profiling
