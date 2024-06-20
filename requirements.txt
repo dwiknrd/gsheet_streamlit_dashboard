@@ -4,4 +4,4 @@ pandas==1.5.3
 pandas-profiling
 st-gsheets-connection
 ydata-profiling
-visions==0.7.4
+visions
