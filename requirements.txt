@@ -119,7 +119,7 @@ typing_extensions==4.12.2
 tzdata==2024.1
 urllib3==2.2.1
 validators==0.28.3
-visions==0.7.5
+visions==0.7.6
 wcwidth==0.2.13
 wheel==0.38.4
 widgetsnbextension==4.0.11
