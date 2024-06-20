@@ -119,12 +119,13 @@ typing_extensions==4.12.2
 tzdata==2024.1
 urllib3==2.2.1
 validators==0.28.3
-visions==0.7.5
+visions
 wcwidth==0.2.13
 wheel==0.38.4
 widgetsnbextension==4.0.11
 wordcloud==1.9.3
 xlrd==2.0.1
 xyzservices==2024.6.0
-ydata-profiling==4.8.3
+ydata_profiling
+pandas_profiling
 zipp==3.19.2
