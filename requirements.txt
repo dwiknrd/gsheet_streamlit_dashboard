@@ -92,7 +92,7 @@ rich==13.7.1
 rpds-py==0.18.1
 rsa==4.9
 scipy
-seaborn==0.13.2
+seaborn
 setuptools==69.5.1
 six==1.16.0
 smmap==5.0.1
