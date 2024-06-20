@@ -1,6 +1,5 @@
 streamlit==1.35.0
 streamlit-pandas-profiling
 pandas
-pandas-profiling
 st-gsheets-connection
 ydata-profiling
