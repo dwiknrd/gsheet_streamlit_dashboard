@@ -2,7 +2,4 @@ streamlit==1.35.0
 streamlit-pandas-profiling
 pandas
 st-gsheets-connection
-pandas-profiling
-pydantic==2.7.3
-pydantic_core==2.18.4
-pydantic-settings==2.3.1
+ydata-profiling
