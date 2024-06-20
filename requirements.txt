@@ -1,7 +1,7 @@
 streamlit==1.35.0
 streamlit-pandas-profiling==0.1.3
 pandas==1.5.3
-pandas-profiling==3.2.0
+pandas-profiling
 st-gsheets-connection
 ydata-profiling
 visions==0.7.4
