@@ -1,7 +1,0 @@
-streamlit
-streamlit-pandas-profiling
-statsmodels
-phik==0.12.4
-pandas
-st-gsheets-connection
-ydata-profiling
