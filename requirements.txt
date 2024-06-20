@@ -3,3 +3,4 @@ streamlit-pandas-profiling
 pandas
 st-gsheets-connection
 pandas-profiling
+pydantic-settings
