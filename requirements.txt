@@ -3,5 +3,5 @@ streamlit-pandas-profiling
 statsmodels==0.13.5
 phik==0.12.4
 pandas
-ydata-profiling
+pandas-profiling==3.2.0
 st-gsheets-connection
