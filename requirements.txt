@@ -76,9 +76,6 @@ pure-eval==0.2.2
 pyarrow==16.1.0
 pyasn1==0.6.0
 pyasn1_modules==0.4.0
-pydantic
-pydantic_core
-pydantic-settings
 pydeck==0.9.1
 Pygments==2.18.0
 pyparsing==3.1.2
