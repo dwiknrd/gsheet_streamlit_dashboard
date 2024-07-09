@@ -1,1 +1,1 @@
-[https://gsheet-analyzer.streamlit.app/](https://gsheet-profiling.streamlit.app/)
+[https://data-profiler-app.streamlit.app/)(https://data-profiler-app.streamlit.app/)
