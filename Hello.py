@@ -1,10 +1,40 @@
 import streamlit as st
 from streamlit_carousel import carousel
 
-import os
 
-st.set_page_config(page_title='Data Profiler',layout='wide', page_icon='📝')
+# Konten halaman About dalam format Markdown
+about_content = """
+#### About This Application
 
+Welcome to our dynamic data dashboard application! This tool is designed to generate detailed reports from dynamic datasets, ensuring you always have the latest insights at your fingertips.
+
+#### Key Features
+
+1. **Data Profiling**
+   - Presents data profiling reports using ydata-profiling, a tool for analyzing and visualizing dataset characteristics.
+
+2. **Dynamically Updated**
+   - Dynamically updates data, integrated with Google Spreadsheet data to ensure information is always up-to-date.
+
+3. **Upload Your Data**
+   - Upload your data to generate instant downloadable reports, facilitating quick and efficient analysis.
+
+#### Contact Us
+
+If you have any questions, suggestions, or feedback, feel free to reach out to us at [dwiknrd@gmail.com](mailto:dwiknrd@gmail.com).
+
+---
+
+Thank you for using our application!
+"""
+
+st.set_page_config(page_title='Data Profiler',
+                   layout='wide', 
+                   page_icon='📝', 
+                   initial_sidebar_state= "collapsed",
+                   menu_items={
+                        'About': about_content
+    })
 
 
 st.markdown("<h1 style='text-align: center;'>Data Profiler App</h1>", unsafe_allow_html=True)
@@ -32,3 +62,11 @@ test_items = [
 
 carousel(items=test_items, width=0.8)
 
+
+# Footer
+footer_content = """
+---
+
+© 2024 Dwi Gustin Nurdialit
+"""
+st.markdown(f"<h1 style='text-align: center;'>{footer_content}</h1>", unsafe_allow_html=True)
