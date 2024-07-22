@@ -34,7 +34,7 @@ def generate_report(df):
 
 if st.sidebar.button("Start Profiling Data"):
     spreadsheet_id = st.secrets.data_tips["spreadsheet2"]
-    worksheet_id = "773835363"
+    worksheet_id = "639926823"
 
     df = load_data(spreadsheet_id, worksheet_id)
 
