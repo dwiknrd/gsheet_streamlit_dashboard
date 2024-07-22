@@ -28,7 +28,7 @@ def load_data(spreadsheet_id, worksheet_id):
     return df
 
 # Function to generate profile report and cache it
-@st.cache_data(ttl=3600)  # Cache report for 1 hour
+# @st.cache_data(ttl=3600)  # Cache report for 1 hour
 def generate_report(df):
     return ProfileReport(df)
 
