@@ -25,7 +25,7 @@ def validate_file(file):
     return ext if ext in ('.csv', '.xlsx') else False
 
 # Fungsi untuk menghasilkan laporan
-@st.cache_data
+# @st.cache_data
 def generate_report(df):
     return ProfileReport(df)
 
