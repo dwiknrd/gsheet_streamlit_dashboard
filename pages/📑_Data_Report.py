@@ -17,7 +17,7 @@ if 'report' not in st.session_state:
     st.session_state.report = None
 
 # Function to read data from Google Sheets and cache it
-@st.cache_data(ttl=3600)  # Cache data for 1 hour
+#@st.cache_data(ttl=3600)  # Cache data for 1 hour
 def load_data(spreadsheet_id, worksheet_id):
     conn = st.connection("gsheets", type=GSheetsConnection)
     df = conn.read(
