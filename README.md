@@ -1,1 +1,1 @@
-https://data-profiler-app.streamlit.app/
+https://profiler.streamlit.app/
