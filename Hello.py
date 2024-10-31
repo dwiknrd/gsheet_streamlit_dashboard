@@ -1,5 +1,5 @@
 import streamlit as st
-# from streamlit_carousel import carousel
+from streamlit_carousel import carousel
 
 
 # Konten halaman About dalam format Markdown
